@@ -32,15 +32,53 @@ body {
 
 /*NAV BAR STYLES*/
 ul {
-  display: flex !important;
+  display: flex;
   flex-flow: row nowrap !important;
-  justify-content: center !important;
+  align-items: center;
+  justify-content: space-evenly !important;
+  padding: 1em;
+  -webkit-box-shadow: 0 10px 30px -12px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0 10px 30px -12px rgba(0,0,0,0.75);
+  box-shadow: 0 10px 30px -12px rgba(0,0,0,0.75);
+}
+
+ul li{
+  list-style-type: none;
+}
+ul li i{
+  color: lightblue;
+  font-size: 1.5em;
+}
+
+ul li button {
+  background: transparent;
+  border: none;
+  color: var(--mainGrey);
+  padding: 0.2em 0.5rem;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+ul li button:hover{
+  background: var(--lightBlue);
+  border-radius: 10px;
+ }
+
+.search-bar input{
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #f3f3f3;
+}
+
+.search-bar input:focus{
+  background-color: white;
 }
 
 .search-bar{
   display: flex;
   flex-flow: row nowrap;
-  padding: 0.5em;
+  padding: 0.8em;
 }
 
 .search-bar button{
