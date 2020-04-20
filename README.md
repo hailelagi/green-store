@@ -2,5 +2,5 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## START HERE!
 
-run "npm install"
-to 
+run "npm install" to install dependencies.
+run "npm start" to start the development server.
